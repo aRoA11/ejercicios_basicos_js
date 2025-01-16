@@ -29,4 +29,9 @@ const nave2 = {
   precioFinal: 80000
 }
 
-// Tu código para actualizar el precio final de cada nave aquí...
+nave1.precioFinal = precioBaseGlobal + nave1.precioBase
+
+nave2.precioFinal = precioBaseGlobal + nave2.precioBase
+
+console.log(nave1)
+console.log(nave2)
