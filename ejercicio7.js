@@ -1,10 +1,10 @@
-let numberOne = 2
-let numberTwo = 6
-function greaterNumber(numberOne = 2, numberTwo = 6) {
+function greaterNumber(numberOne, numberTwo) {
   if (numberOne > numberTwo) {
-    console.log(numberOne)
-  } 
-  else (numberTwo > numberOne) {
-    console.log(numberTwo)
+    console.log('El número mayor es: ' + numberOne)
+  } else {
+    console.log('El número mayor es: ' + numberTwo)
   }
 }
+let numberOne = 87675
+let numberTwo = 97867
+greaterNumber(numberOne, numberTwo)
