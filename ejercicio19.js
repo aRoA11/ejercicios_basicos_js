@@ -7,13 +7,13 @@ const toys = [
   { id: 60, name: 'Nerf Blaster' },
   { id: 71, name: 'Sylvanian Families - Familia gato' }
 ]
-function hola(list) {
-  const toys.name = toy,
-  for (const name of toys) {
-    let item = list[i]
-    if (!toy.inludes('gato')) {
-      toy.push (item)
+function filteredToys(list) {
+  const filteredToys = []
+  for (const toy of list) {
+    if (!toy.name.includes('gato')) {
+      filteredToys.push(toy)
     }
   }
+  return filteredToys
 }
-console.log(hola(toys))
+console.log(filteredToys(toys))
