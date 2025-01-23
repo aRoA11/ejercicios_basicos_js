@@ -12,5 +12,12 @@ const names = [
   'Marc'
 ]
 function nameFinder(nameList) {
-  // Completar
+  const name = 'Marc'
+  for (let i = 0; i < nameList.length; i++) {
+    if (nameList[i] === name) {
+      return { exists: true, position: i }
+    }
+  }
+  return { exists: false }
 }
+console.log(nameFinder(names))
