@@ -7,12 +7,12 @@ const products = [
   'AC/DC Camiseta'
 ]
 function includesCamiseta(list) {
-  let hola = []
+  let item = []
   for (let i = 0; i < list.length; i++) {
     if (list[i].includes('Camiseta')) {
-      hola.push(list[i])
+      item.push(list[i])
     }
   }
-  return hola
+  return item
 }
 console.log(includesCamiseta(products))
